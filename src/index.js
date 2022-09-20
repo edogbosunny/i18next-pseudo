@@ -26,6 +26,8 @@ export default class Pseudo {
   }
 
   process(value, key, options, translator) {
+    console.log('>>><D<D<D<D', {value, key})
+    console.log('>>><D<Dtranslator<D<D', {value, translator})
     if ((translator.language && this.options.languageToPseudo !== translator.language) || !this.options.enabled) {
       return value;
     }
